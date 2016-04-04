@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<H3><p>Click the button </p></H3>
+
+<button onclick="myFunction()">Click me</button>
+
+<img src="res1.png" alt="graph" id="demo">
+<br/><br/><br/>
+<div id="result">res1.png</div>
+<script type="text/javascript">
+var s=2
+function myFunction() {
+    var image=document.getElementById("demo");
+    var p='res'+s+'.png';
+    image.src=p;
+    document.getElementById("result").innerHTML=p;
+    s++;
+    if (s==101){
+    s=1;
+    }
+
+
+}
+</script>
+
+</body>
+</html>
